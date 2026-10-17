@@ -1,0 +1,33 @@
+[project]
+site_name = "OOC Particle Velocimetry"
+site_url = "https://mihails-birjukovs.github.io/OOC_Particles_Velocimetry_Docs/"
+site_description = "Scientific documentation for the OOC Particle Flow Mathematica workflow"
+site_author = "Mihails Birjukovs"
+copyright = "Copyright © 2026 Mihails Birjukovs"
+docs_dir = "docs"
+site_dir = "site"
+nav = [
+  { "Home" = "index.md" },
+  { "Getting started" = [
+    "getting-started/index.md",
+    "tutorials/first-run.md",
+    "reference/USAGE.md",
+  ] },
+  { "Processing methods" = [
+    "methods/index.md",
+    "reference/METHODS.md",
+  ] },
+  { "Examples" = "examples/index.md" },
+  { "Validation" = "validation/index.md" },
+  { "Licensing" = "licensing/index.md" },
+]
+
+[project.theme]
+features = [
+  "navigation.instant",
+  "navigation.tracking",
+  "navigation.tabs",
+  "navigation.sections",
+  "toc.follow",
+  "navigation.top",
+]
