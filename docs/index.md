@@ -18,7 +18,7 @@ This site explains the research workflow from raw DynamicStudio TIFF sequences t
 
 The current software is **v5.2**, promoted from the user-tested v5.1 notebook after an end-to-end run in Windows Mathematica 12.1.1. The version promotion changed notebook identity and explanatory text, not executable processing cells.
 
-The accepted validation includes raw-to-cropped image equality on 100 frames, matching detected-particle counts at 99 independently plotted vertices across historical and revised runs, and notebook-level smoke/structure tests. **Count agreement does not establish pixelwise equivalence of enhanced images or masks, nor exact matching centroid coordinates.**
+The accepted validation includes raw-to-cropped image equality on 100 frames, matching detected-particle counts at 99 independently plotted vertices across three PDF runs, plus a separate **100/100** historical-v5-mask-to-saved-Run-2 count comparison, and notebook-level smoke/structure tests. **Count agreement does not establish pixelwise equivalence of enhanced images or masks, nor exact matching centroid coordinates.**
 
 ## Availability and scope
 
