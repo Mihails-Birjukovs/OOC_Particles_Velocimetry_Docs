@@ -7,7 +7,7 @@ The full demonstration was evaluated in a connected Wolfram kernel.
 ## 1. Create a deterministic image stack
 
 ```wl
-ClearAll["Global`*"];
+(* Run in a fresh Wolfram session to avoid stale definitions. *)
 n = 72;
 nFrames = 8;
 
