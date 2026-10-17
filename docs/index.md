@@ -8,6 +8,9 @@ This site explains the research workflow from raw DynamicStudio TIFF sequences t
 
 - [Set up the notebook](getting-started/index.md) — prerequisites and where each file belongs.
 - [Process your first run](tutorials/first-run.md) — a step-by-step walkthrough of the existing pipeline.
+- [Explore the illustrated pipeline](pipeline/index.md) — the implemented stages and their outputs.
+- [Run a reproducible synthetic example](tutorials/synthetic-sequence.md) — executable Wolfram code without experimental inputs.
+- [Review the real 100-frame Run 1 case](tutorials/real-run1.md) — independent TIFF and detection-count checks.
 - [Read the scientific methods](methods/index.md) — image enhancement, segmentation, artifact rejection, and centroid extraction.
 - [Understand the evidence](validation/index.md) — what was validated and what remains unproven.
 

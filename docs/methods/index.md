@@ -21,3 +21,11 @@ The persistent-artifact segmentation is deliberately fixed to `MorphologicalBina
 The notebook provides detection coordinates; it does not claim to implement the historical unimplemented MNNT trajectory-tracking placeholders.
 
 The [full methods guide](../reference/METHODS.md) explains each stage, current parameters, and Wolfram-version sensitivity. [First-run instructions](../tutorials/first-run.md) give the execution order.
+
+## Extended scientific guides
+
+- [Illustrated processing pipeline](../pipeline/index.md)
+- [Actual v5.2 processing parameters](../reference/parameters.md)
+- [Annotated Wolfram Language Input cells](../reference/wolfram-examples.md)
+- [Runnable synthetic sequence](../tutorials/synthetic-sequence.md)
+- [Real Run 1 reproducibility case](../tutorials/real-run1.md)

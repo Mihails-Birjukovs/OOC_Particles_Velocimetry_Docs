@@ -19,6 +19,12 @@ EXPECTED = {
     "licensing/index.md",
     "reference/USAGE.md",
     "reference/METHODS.md",
+    "reference/parameters.md",
+    "reference/wolfram-examples.md",
+    "pipeline/index.md",
+    "assets/pipeline-v5.2.svg",
+    "tutorials/synthetic-sequence.md",
+    "tutorials/real-run1.md",
 }
 BLOCKED_EXTENSIONS = {".nb", ".wl", ".7z", ".tif", ".tiff", ".csv", ".pdf", ".edoc"}
 BLOCKED_PATHS = (r"D:\\\\BIG DATA", r"/mnt/data/", r"/home/oai/")

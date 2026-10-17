@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="346" viewBox="0 0 1120 346" role="img" aria-labelledby="title desc">
+<title id="title">OOC v5.2 particle analysis processing stages</title>
+<desc id="desc">Six boxes connected by arrows show raw TIFF import, crop and diagnostic projections, enhancement, histogram matching, artifact suppression and segmentation, then centroid extraction and metadata export.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6" stroke="#38759a" fill="none" stroke-width="1.5"/></marker></defs>
+<rect width="1120" height="346" fill="#f7fafc" rx="14"/>
+<g font-family="Arial,Helvetica,sans-serif" fill="#17354c">
+<text x="30" y="32" font-size="19" font-weight="bold">OOC Particle Flow v5.2 — implemented processing pipeline</text>
+<g fill="#e6f3fc" stroke="#8baec9" stroke-width="1.6">
+<rect x="28" y="72" width="313" height="69" rx="9"/><rect x="403" y="72" width="313" height="69" rx="9"/><rect x="778" y="72" width="313" height="69" rx="9"/>
+<rect x="778" y="200" width="313" height="69" rx="9"/><rect x="403" y="200" width="313" height="69" rx="9"/><rect x="28" y="200" width="313" height="69" rx="9"/>
+</g>
+<g font-size="15" font-weight="bold" text-anchor="middle">
+<text x="185" y="98">1. Run discovery + import</text><text x="560" y="98">2. Crop + diagnostics</text><text x="935" y="98">3. Enhance particles</text>
+<text x="935" y="226">4. Histogram matching</text><text x="560" y="226">5. Segmentation</text><text x="185" y="226">6. Centroids + metadata</text>
+</g>
+<g font-size="12" text-anchor="middle" fill="#36536a">
+<text x="185" y="120">Validated last TIFF image/page</text><text x="560" y="120">ImageTake; temporal projections</text><text x="935" y="120">Top-hat; background; CNR</text>
+<text x="935" y="248">Reference luminance frame</text><text x="560" y="248">Fixed Entropy artifact suppression</text><text x="185" y="248">Detection coordinates; verified record</text>
+</g>
+<g stroke="#38759a" stroke-width="2.4" fill="none" marker-end="url(#arrow)"><path d="M345 106 H390"/><path d="M720 106 H765"/><path d="M935 146 V188"/><path d="M775 234 H728"/><path d="M401 234 H353"/></g>
+<text x="560" y="311" text-anchor="middle" font-size="12" fill="#557086">Schematic only. Executable notebook Input cells define authoritative behavior; temporal projections are diagnostics.</text>
+</g></svg>
