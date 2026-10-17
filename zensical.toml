@@ -11,10 +11,15 @@ nav = [
   { "Getting started" = [
     "getting-started/index.md",
     "tutorials/first-run.md",
+    "tutorials/synthetic-sequence.md",
+    "tutorials/real-run1.md",
     "reference/USAGE.md",
   ] },
   { "Processing methods" = [
     "methods/index.md",
+    "pipeline/index.md",
+    "reference/parameters.md",
+    "reference/wolfram-examples.md",
     "reference/METHODS.md",
   ] },
   { "Examples" = "examples/index.md" },
