@@ -8,7 +8,7 @@ The current release is **OOC Particle Flow v5.2**, a filename/title promotion of
 | --- | --- |
 | Raw final-page TIFF to historical cropped image | **100/100** exact uint16 pixel matches |
 | Run 1 / Run 2 / Run 3 plotted particle counts | **99/99** independently available vertices matched |
-| Complete Run 2 count series | **21,322** detections across 100 frames, including frame 28 = 207 |
+| Complete archived-v5-mask versus saved Run 2 count series | **100/100** independent 8-connected-component counts matched; **21,322** detections, frame 28 = 207 |
 | Notebook structure QA | **16/16** passed |
 | Actual processing-cell synthetic QA | **7/7** passed |
 | Metadata-export QA | **6/6** passed |
