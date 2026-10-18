@@ -23,6 +23,7 @@ EXPECTED = {
     "reference/wolfram-examples.md",
     "pipeline/index.md",
     "assets/pipeline-v5.2.svg",
+    "assets/real-run1-historical-v5.svg",
     "tutorials/synthetic-sequence.md",
     "tutorials/real-run1.md",
 }
@@ -44,7 +45,14 @@ def main() -> None:
                 raise SystemExit(f"Unreviewed internal path in public page: {name}")
         if re.search(r"(?i)(?:password|api[_-]?key|secret)[ \t]*[:=][ \t]*[\w-]{8,}", data):
             raise SystemExit(f"Possible credentials in public page: {name}")
-    print(f"Public documentation allowlist verified: {len(actual)} Markdown pages")
+    # One specifically authorized low-resolution historical-v5 montage.
+    montage = (DOCS / "assets/real-run1-historical-v5.svg").read_text(encoding="utf-8")
+    if (len(montage) > 140_000 or
+        montage.count("data:image/jpeg;base64,") != 4 or
+        "<script" in montage.lower() or
+        "This is NOT a v5.2" not in montage):
+        raise SystemExit("Invalid publication-approved Run 1 montage")
+    print(f"Public documentation allowlist verified: {len(actual)} curated files")
 
 
 if __name__ == "__main__":
