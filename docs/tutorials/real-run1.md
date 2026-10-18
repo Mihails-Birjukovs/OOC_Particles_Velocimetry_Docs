@@ -25,10 +25,12 @@ This is stronger **count-level evidence** than the older 99-point PDF plot compa
 
 The native **Run 3** already completed 100-frame processing under Windows Mathematica 12.1.1 and exported a verified 17-field processing record with reference frame 12. A historical v5 image should **never** be relabeled as a v5.2 image.
 
-## Real imagery and permissions
+## Approved experimental figure
 
-A low-resolution **real** figure showing raw frame 51, a historical v5 enhanced frame, the historical v5 mask, and an independently calculated centroid overlay has been prepared and scientifically checked **inside the private repository**. Publication of that derived experimental imagery remains under a separate rights-review gate. The MIT license for software/documentation does **not** automatically license experimental imagery.
+![Authentic frame 51: raw TIFF, historical v5 enhancement and mask, centroid overlay and component-count series](../assets/real-run1-historical-v5.svg)
 
-Until the figure's publication permissions are explicitly confirmed, this public tutorial provides verified numerical results and the reproduction steps but does **not** redistribute raw TIFFs or mask images.
+*Figure 1.* Real Run 1 frame 51. The enhanced frame and mask are **historical v5** outputs, not a fresh v5.2 run. Centroids and the 100-frame count series were independently computed from the historical masks. Count agreement does not establish v5/v5.2 pixelwise or centroid equivalence.
+
+**All rights reserved — figure-specific permission.** Publication of this reduced-resolution montage on this website is expressly authorized. The experimental pixels and derived figure are **excluded from the MIT license**. Reproduction, adaptation, or redistribution requires permission from the relevant rights holder(s). Raw TIFFs and full processed archives remain private.
 
 For a fully open, executable image-analysis demonstration, follow the [synthetic-sequence tutorial](synthetic-sequence.md).
