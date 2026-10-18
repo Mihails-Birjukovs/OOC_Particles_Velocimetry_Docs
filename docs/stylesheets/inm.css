@@ -53,3 +53,75 @@
  .ooc-hero h1 { font-size: 1.7rem; }
  .md-header__button.md-logo img, .md-logo img { width: 86px; height: 32px; }
 }
+
+/* Legibility on dark-blue/navy surfaces: override dark theme descendants
+   while retaining dark navy lettering for the orange primary CTA. */
+.md-tabs,
+.md-tabs .md-tabs__link,
+.md-tabs .md-tabs__link:visited,
+.md-tabs .md-tabs__link:hover,
+.md-tabs .md-tabs__link:focus-visible {
+  color: #ffffff;
+}
+.md-tabs .md-tabs__link { opacity: .86; }
+.md-tabs .md-tabs__item--active .md-tabs__link,
+.md-tabs .md-tabs__link:hover,
+.md-tabs .md-tabs__link:focus-visible { opacity: 1; }
+.md-tabs .md-tabs__link:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
+.md-typeset .ooc-hero,
+.md-typeset .ooc-hero :is(h1, h2, h3, h4, p, strong, span, small, li) {
+  color: #ffffff;
+}
+.md-typeset .ooc-hero .ooc-eyebrow { color: #ffba80; }
+.md-typeset .ooc-hero a:not(.ooc-link-primary),
+.md-typeset .ooc-hero a:not(.ooc-link-primary):visited { color: #ffffff; }
+.md-typeset .ooc-hero a.ooc-link-primary,
+.md-typeset .ooc-hero a.ooc-link-primary:visited { color: #142c41; }
+.md-typeset table:not([class]) thead th,
+.md-typeset table:not([class]) thead th :is(a, a:visited, strong, em, small, span, code) {
+  color: #ffffff;
+}
+.md-typeset table:not([class]) thead th code {
+  background: rgba(255,255,255,.13);
+}
+.md-typeset table:not([class]) thead th a {
+  text-decoration: underline;
+  text-underline-offset: .2em;
+}
+.md-typeset table:not([class]) thead th a:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+.md-footer, .md-footer a, .md-footer a:visited,
+.md-footer__title, .md-footer__direction,
+.md-footer-meta, .md-footer-meta a, .md-footer-meta a:visited,
+.md-footer-meta__inner { color: #ffffff; }
+.md-footer a:hover, .md-footer-meta a:hover { color: #ffd0a9; }
+.md-footer-meta { background: #142c41; border-top: 1px solid rgba(255,255,255,.2); }
+/* Footer-only secondary branding: unobtrusive right-aligned official
+   square INM image from the user's supplied FB_INM_blue artwork.
+   It is decorative because the main header logo has an accessible label. */
+.md-footer-meta__inner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .75rem 1rem;
+  min-height: 5.3rem;
+}
+.md-footer-meta__inner::after {
+  content: "";
+  display: block;
+  flex: 0 0 70px;
+  width: 70px;
+  height: 70px;
+  margin-left: auto;
+  border: 1px solid rgba(255,255,255,.4);
+  border-radius: 5px;
+  background: #ffffff url("../assets/inm-square-footer.svg") center / contain no-repeat;
+}
+@media (max-width: 650px) {
+  .md-footer-meta__inner::after { flex-basis: 54px; width: 54px; height: 54px; }
+}

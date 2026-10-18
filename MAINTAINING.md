@@ -46,3 +46,11 @@ The private source copies for `pipeline/index.md`, `assets/pipeline-v5.2.svg`, `
 Official INM logos were faithfully vector-traced from user-supplied artwork to `docs/assets/inm-horizontal.svg` and `docs/assets/inm-mark.svg`. Both remain institutional marks outside MIT. `docs/stylesheets/inm.css` applies the approved MMP2027-prospectus-inspired colors/layout without reusing event banners. These files and the `docs/credits/index.md` and `docs/research/index.md` pages are explicitly allowlisted for publication.
 
 The private repository remains authoritative: `site-content/credits/index.md`, `site-content/research/index.md`, `site-content/stylesheets/inm.css`, `site-content/assets/inm-*.svg` map to their public `docs/` counterparts. The data are owned by ISSP; Betija Ziediņa and Gunita Kojāne are the principal experimental contributors. The site code/docs are by Mihails Birjukovs (INM); an authorized historical Run 1 figure remains all rights reserved. All other experimental files and archives are excluded.
+
+## Square INM footer emblem and blue-background contrast (2026-10-18)
+
+The public footer now includes an intentionally small square official INM logo from the user's supplied `FB_INM_blue` artwork, at `docs/assets/inm-square-footer.svg`, with a white base preserving the original white wave. Its location is controlled by `.md-footer-meta__inner::after` in `docs/stylesheets/inm.css` so it appears at bottom-right on all pages without any JavaScript, individual-page duplication or intrusive fixed overlay. Desktop size is 70 × 70 px; small screens use 54 × 54 px.
+
+Navy navigation tabs, footer text and links, table headers and hero content now explicitly use high-contrast white type. The orange primary hero action intentionally retains dark navy lettering for legibility. The footer emblem is decorative; the already accessible INM header/homepage mark carries the institutional name. Its use remains separate from the site's MIT software/documentation license.
+
+The private authoritative paths are `site-content/assets/inm-square-footer.svg` and `site-content/stylesheets/inm.css`. Only the approved SVG and reviewed stylesheet are mirrored publicly, and `scripts/validate_public_docs.py` explicitly guards their presence and approved brand palette. No scientific code or experimental datasets change.

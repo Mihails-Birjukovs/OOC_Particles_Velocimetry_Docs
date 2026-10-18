@@ -25,6 +25,7 @@ EXPECTED = {
     "assets/pipeline-v5.2.svg",
     "assets/inm-horizontal.svg",
     "assets/inm-mark.svg",
+    "assets/inm-square-footer.svg",
     "stylesheets/inm.css",
     "credits/index.md",
     "research/index.md",
@@ -57,7 +58,7 @@ def main() -> None:
         "<script" in montage.lower() or
         "This is NOT a v5.2" not in montage):
         raise SystemExit("Invalid publication-approved Run 1 montage")
-    for logo_path in ("assets/inm-horizontal.svg", "assets/inm-mark.svg"):
+    for logo_path in ("assets/inm-horizontal.svg", "assets/inm-mark.svg", "assets/inm-square-footer.svg"):
         logo = (DOCS / logo_path).read_text(encoding="utf-8")
         if ('viewBox=' not in logo or 'fill="#004b8e"' not in logo
             or 'fill="#f47b20"' not in logo or '<script' in logo.lower()):
