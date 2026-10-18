@@ -8,6 +8,10 @@ Each archived example contains cropped TIFFs, enhanced TIFFs, particle masks, di
 
 The [real Run 1 tutorial](../tutorials/real-run1.md) includes one specifically approved **reduced-resolution** montage derived from an actual acquisition and **historical v5** processing outputs. The figure is **all rights reserved**, outside the MIT software/documentation license. No raw TIFF archive, complete historical image series, or measurement fixture is released. Additional experimental figures require independent permission review.
 
+## Experimental contributions
+
+The actual Run 1 acquisition is **ISSP, University of Latvia** experimental data. **Betija Ziediņa** and **Gunita Kojāne** are the principal experimental contributors. The corresponding processing code and documentation are by **Mihails Birjukovs (INM)**. The published example is specifically authorized by ISSP, but the experimental imagery remains all rights reserved. See [Credits](../credits/index.md).
+
 ## Data permissions
 
 The MIT license applies to the project's original software and documentation, **not automatically to experimental image data, processed archives, or numeric measurement fixtures**. See [licensing](../licensing/index.md).

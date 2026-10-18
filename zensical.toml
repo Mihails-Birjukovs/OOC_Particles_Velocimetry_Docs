@@ -1,11 +1,12 @@
 [project]
 site_name = "OOC Particle Velocimetry"
 site_url = "https://mihails-birjukovs.github.io/OOC_Particles_Velocimetry_Docs/"
-site_description = "Scientific documentation for the OOC Particle Flow Mathematica workflow"
-site_author = "Mihails Birjukovs"
+site_description = "Validated OOC Particle Flow v5.2 · INM software and ISSP experimental provenance"
+site_author = "Mihails Birjukovs · Institute of Numerical Modelling, University of Latvia"
 copyright = "Copyright © 2026 Mihails Birjukovs"
 docs_dir = "docs"
 site_dir = "site"
+extra_css = ["stylesheets/inm.css"]
 nav = [
   { "Home" = "index.md" },
   { "Getting started" = [
@@ -24,10 +25,14 @@ nav = [
   ] },
   { "Examples" = "examples/index.md" },
   { "Validation" = "validation/index.md" },
+  { "Research & references" = "research/index.md" },
+  { "Credits & provenance" = "credits/index.md" },
   { "Licensing" = "licensing/index.md" },
 ]
 
 [project.theme]
+logo = "assets/inm-horizontal.svg"
+favicon = "assets/inm-mark.svg"
 features = [
   "navigation.instant",
   "navigation.tracking",
@@ -36,3 +41,8 @@ features = [
   "toc.follow",
   "navigation.top",
 ]
+
+[project.theme.palette]
+scheme = "default"
+primary = "custom"
+accent = "custom"

@@ -23,6 +23,11 @@ EXPECTED = {
     "reference/wolfram-examples.md",
     "pipeline/index.md",
     "assets/pipeline-v5.2.svg",
+    "assets/inm-horizontal.svg",
+    "assets/inm-mark.svg",
+    "stylesheets/inm.css",
+    "credits/index.md",
+    "research/index.md",
     "assets/real-run1-historical-v5.svg",
     "tutorials/synthetic-sequence.md",
     "tutorials/real-run1.md",
@@ -52,6 +57,11 @@ def main() -> None:
         "<script" in montage.lower() or
         "This is NOT a v5.2" not in montage):
         raise SystemExit("Invalid publication-approved Run 1 montage")
+    for logo_path in ("assets/inm-horizontal.svg", "assets/inm-mark.svg"):
+        logo = (DOCS / logo_path).read_text(encoding="utf-8")
+        if ('viewBox=' not in logo or 'fill="#004b8e"' not in logo
+            or 'fill="#f47b20"' not in logo or '<script' in logo.lower()):
+            raise SystemExit("Unexpected INM brand asset: " + logo_path)
     print(f"Public documentation allowlist verified: {len(actual)} curated files")
 
 
