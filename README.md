@@ -4,7 +4,7 @@ This repository publishes the **Zensical documentation website** for the validat
 
 **Documentation site:** https://mihails-birjukovs.github.io/OOC_Particles_Velocimetry_Docs/
 
-The source-code repository (`Mihails-Birjukovs/OOC_Particles_Velocimetry`) remains **private**. This public documentation repository intentionally contains **no notebook code**, experimental TIFF files, processed archive payloads, raw data, or measurement fixtures. The publicly reviewed pages explain methods, use, validation scope and licensing.
+The source-code repository (`Mihails-Birjukovs/OOC_Particles_Velocimetry`) remains **private**. This public documentation repository intentionally contains **no notebook code**, experimental TIFF files, processed archive payloads, raw datasets, or measurement fixtures. The publicly reviewed pages explain methods, use, validation scope and licensing.
 
 ## Content
 
@@ -34,4 +34,4 @@ See [MAINTAINING.md](MAINTAINING.md) for the one-to-one source mapping and publi
 
 ## License
 
-Original software documentation in this public repository is available under the [MIT License](LICENSE), © 2026 Mihails Birjukovs. **The license does not cover experimental data**, which are not distributed here.
+Original software documentation in this public repository is available under the [MIT License](LICENSE), © 2026 Mihails Birjukovs. **Experimental data are not MIT-licensed.** One explicitly approved, reduced-resolution historical-v5 figure appears in the [real Run 1 tutorial](docs/tutorials/real-run1.md) under a separate **all-rights-reserved** notice; the underlying datasets remain private.
