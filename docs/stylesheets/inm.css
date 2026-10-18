@@ -125,3 +125,28 @@
 @media (max-width: 650px) {
   .md-footer-meta__inner::after { flex-basis: 54px; width: 54px; height: 54px; }
 }
+
+/* Zensical renders both the copyright and "Made with Zensical" notice inside
+   .md-copyright. Its own foreground and link rules do not inherit reliably
+   from .md-footer. The stronger selectors below fix that specific regression. */
+footer.md-footer .md-footer-meta .md-copyright,
+footer.md-footer .md-footer-meta .md-copyright__highlight,
+footer.md-footer .md-footer-meta .md-copyright :is(span, small, strong) {
+  color: #ffffff !important;
+  opacity: 1;
+}
+footer.md-footer .md-footer-meta .md-copyright a,
+footer.md-footer .md-footer-meta .md-copyright a:visited {
+  color: #ffffff !important;
+  text-decoration-color: rgba(255, 255, 255, .85);
+  text-underline-offset: 2px;
+}
+footer.md-footer .md-footer-meta .md-copyright a:hover,
+footer.md-footer .md-footer-meta .md-copyright a:focus-visible {
+  color: #ffd0a9 !important;
+  text-decoration-color: currentColor;
+}
+footer.md-footer .md-footer-meta .md-copyright a:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}

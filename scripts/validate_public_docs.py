@@ -63,6 +63,15 @@ def main() -> None:
         if ('viewBox=' not in logo or 'fill="#004b8e"' not in logo
             or 'fill="#f47b20"' not in logo or '<script' in logo.lower()):
             raise SystemExit("Unexpected INM brand asset: " + logo_path)
+    # Copyright / generator link styles must override Zensical's dark defaults.
+    css = (DOCS / "stylesheets/inm.css").read_text(encoding="utf-8")
+    for fragment in (
+        "footer.md-footer .md-footer-meta .md-copyright",
+        ".md-copyright a:visited",
+        "color: #ffffff !important;",
+    ):
+        if fragment not in css:
+            raise SystemExit("Missing Zensical copyright contrast fix: " + fragment)
     print(f"Public documentation allowlist verified: {len(actual)} curated files")
 
 

@@ -54,3 +54,7 @@ The public footer now includes an intentionally small square official INM logo f
 Navy navigation tabs, footer text and links, table headers and hero content now explicitly use high-contrast white type. The orange primary hero action intentionally retains dark navy lettering for legibility. The footer emblem is decorative; the already accessible INM header/homepage mark carries the institutional name. Its use remains separate from the site's MIT software/documentation license.
 
 The private authoritative paths are `site-content/assets/inm-square-footer.svg` and `site-content/stylesheets/inm.css`. Only the approved SVG and reviewed stylesheet are mirrored publicly, and `scripts/validate_public_docs.py` explicitly guards their presence and approved brand palette. No scientific code or experimental datasets change.
+
+## Copyright and Zensical credit contrast correction (2026-10-18)
+
+A user-supplied screenshot revealed that the **Copyright © 2026 Mihails Birjukovs** text and **Made with Zensical** footer generator link still used dark text on the navy footer, despite broader `.md-footer-meta` rules. Zensical applies independent styling to `.md-copyright` and its link. The authoritative source CSS now targets `footer.md-footer .md-footer-meta .md-copyright` and the generator link directly, making them white with accessible pale-orange hover/focus states. The public build validates these selectors before publishing. This patch leaves the small square INM footer logo and all scientific/data content unchanged.
