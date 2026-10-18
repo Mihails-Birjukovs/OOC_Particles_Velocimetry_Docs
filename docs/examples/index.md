@@ -4,9 +4,9 @@ The project documents **seven historical processed-output examples**. Their unde
 
 Each archived example contains cropped TIFFs, enhanced TIFFs, particle masks, diagnostic JPEGs, a compressed centroid record, and a PDF processing snapshot. The archives are tracked separately as Git LFS objects in the private repository.
 
-## What will appear here
+## Published real-data example
 
-An illustrated example gallery is planned, with matched source/enhanced/mask examples and annotated parameter choices. **Actual laboratory imagery will only be published after the appropriate experimental-data permissions have been confirmed.** Until then, the public documentation includes descriptions rather than distributing sample images.
+The [real Run 1 tutorial](../tutorials/real-run1.md) includes one specifically approved **reduced-resolution** montage derived from an actual acquisition and **historical v5** processing outputs. The figure is **all rights reserved**, outside the MIT software/documentation license. No raw TIFF archive, complete historical image series, or measurement fixture is released. Additional experimental figures require independent permission review.
 
 ## Data permissions
 
