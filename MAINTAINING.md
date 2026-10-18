@@ -16,7 +16,7 @@ The private `Mihails-Birjukovs/OOC_Particles_Velocimetry` repository is the auth
 | `docs/USAGE.md` | `docs/reference/USAGE.md` |
 | `docs/METHODS.md` | `docs/reference/METHODS.md` |
 
-These nine pages formed the initial publication allowlist. The expanded science pages are maintained alongside them in the private source repository, with an explicitly updated allowlist and Zensical navigation. The pipeline SVG is an original schematic; experimental imagery remains under separate rights review. New content requires explicit scientific/privacy review and changes to `scripts/validate_public_docs.py` and `zensical.toml`.
+These nine pages formed the initial publication allowlist. The expanded science pages are maintained alongside them in the private source repository, with an explicitly updated allowlist and Zensical navigation. The pipeline SVG is an original schematic; one approved historical-v5 figure is separately rights reserved; further imagery still requires individual rights review. New content requires explicit scientific/privacy review and changes to `scripts/validate_public_docs.py` and `zensical.toml`.
 
 ## Updating the site
 
