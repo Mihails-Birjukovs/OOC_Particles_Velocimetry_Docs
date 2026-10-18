@@ -39,4 +39,4 @@ The first public version was prepared from the private repository's Zensical fou
 
 ## Extended science pages
 
-The private source copies for `pipeline/index.md`, `assets/pipeline-v5.2.svg`, `reference/parameters.md`, `reference/wolfram-examples.md`, `tutorials/synthetic-sequence.md`, and `tutorials/real-run1.md` live under `site-content/` and map to equivalent paths under the public `docs/` tree. Only reviewed text and original diagrams cross this boundary.
+The private source copies for `pipeline/index.md`, `assets/pipeline-v5.2.svg`, `reference/parameters.md`, `reference/wolfram-examples.md`, `tutorials/synthetic-sequence.md`, and `tutorials/real-run1.md` live under `site-content/` and map to equivalent paths under the public `docs/` tree. This boundary also permits the single approved low-resolution Run 1 figure.
