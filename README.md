@@ -12,6 +12,8 @@ The source-code repository (`Mihails-Birjukovs/OOC_Particles_Velocimetry`) remai
 - [Methods](docs/methods/index.md) and detailed [algorithm reference](docs/reference/METHODS.md)
 - [Full usage reference](docs/reference/USAGE.md)
 - [Examples](docs/examples/index.md) and [validation](docs/validation/index.md)
+- [Credits & ISSP/INM data provenance](docs/credits/index.md)
+- [Research papers & software lineage](docs/research/index.md)
 - [Licensing and dataset permissions](docs/licensing/index.md)
 
 ## Build locally
@@ -31,6 +33,12 @@ The strict build command used by CI is `zensical build --clean --strict`. GitHub
 The approved documentation originates from the private source repository's `site-content/` plus two curated references, `docs/USAGE.md` and `docs/METHODS.md`. Changes are **reviewed and copied explicitly**; there is no connector or GitHub Action with access to private source material from this public repository.
 
 See [MAINTAINING.md](MAINTAINING.md) for the one-to-one source mapping and publication rules.
+
+## Institutional and scientific provenance
+
+**Experimental data:** Institute of Solid State Physics (ISSP), University of Latvia; main contributors **Betija Ziediņa** and **Gunita Kojāne**. ISSP authorized the single reduced-resolution historical-v5 Run 1 worked example. **Software and documentation:** Mihails Birjukovs, Institute of Numerical Modelling (INM), University of Latvia.
+
+The software descends from the original [OOC CNR-boost Mathematica repository](https://github.com/Mihails-Birjukovs/OOC_particle_flow_CNR_boost_for_PIV); a related OOC application is published in [Šints et al., *PLOS ONE* (2025)](https://doi.org/10.1371/journal.pone.0322069). The site's official INM logo and compact symbol were created from user-supplied INM artwork and remain outside the MIT software license.
 
 ## License
 

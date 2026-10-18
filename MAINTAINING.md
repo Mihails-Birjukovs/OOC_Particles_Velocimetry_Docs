@@ -40,3 +40,9 @@ The first public version was prepared from the private repository's Zensical fou
 ## Extended science pages
 
 The private source copies for `pipeline/index.md`, `assets/pipeline-v5.2.svg`, `reference/parameters.md`, `reference/wolfram-examples.md`, `tutorials/synthetic-sequence.md`, and `tutorials/real-run1.md` live under `site-content/` and map to equivalent paths under the public `docs/` tree. This boundary also permits the single approved low-resolution Run 1 figure.
+
+## INM branding and scientific provenance — 2026-10-18
+
+Official INM logos were faithfully vector-traced from user-supplied artwork to `docs/assets/inm-horizontal.svg` and `docs/assets/inm-mark.svg`. Both remain institutional marks outside MIT. `docs/stylesheets/inm.css` applies the approved MMP2027-prospectus-inspired colors/layout without reusing event banners. These files and the `docs/credits/index.md` and `docs/research/index.md` pages are explicitly allowlisted for publication.
+
+The private repository remains authoritative: `site-content/credits/index.md`, `site-content/research/index.md`, `site-content/stylesheets/inm.css`, `site-content/assets/inm-*.svg` map to their public `docs/` counterparts. The data are owned by ISSP; Betija Ziediņa and Gunita Kojāne are the principal experimental contributors. The site code/docs are by Mihails Birjukovs (INM); an authorized historical Run 1 figure remains all rights reserved. All other experimental files and archives are excluded.

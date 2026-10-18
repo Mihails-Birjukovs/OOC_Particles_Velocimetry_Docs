@@ -294,3 +294,9 @@ The processing record contains principal parameters together with Wolfram versio
 The historical reference output was generated with Mathematica 12.1.1 on Windows.
 
 Later Wolfram versions can differ slightly in floating-point operations, `BrightnessEqualize`, or thresholding. Small last-bit or threshold-level differences should therefore be separated from genuine algorithmic changes when performing regression comparisons.
+
+## Scientific origins and primary references
+
+OOC Particle Flow v5.2 is a simplified and optimized continuation of Mihails Birjukovs's earlier [OOC CNR Boost for PIV Mathematica repository](https://github.com/Mihails-Birjukovs/OOC_particle_flow_CNR_boost_for_PIV). The peer-reviewed journal publication of the OOC flow study is [Šints et al., *PLOS ONE* 20(6), e0322069 (2025)](https://doi.org/10.1371/journal.pone.0322069), also available as [arXiv:2409.13650](https://arxiv.org/abs/2409.13650).
+
+The predecessor README also cites image-analysis methods in [*Applied Sciences* (2021)](https://doi.org/10.3390/app11209710), [*Experiments in Fluids* (2022)](https://doi.org/10.1007/s00348-022-03445-2), and [*Experiments in Fluids* (2023)](https://doi.org/10.1007/s00348-023-03671-2). These are background references; the actual v5.2 Input cells define implemented features. See the [Research & References website page](../research/index.md).

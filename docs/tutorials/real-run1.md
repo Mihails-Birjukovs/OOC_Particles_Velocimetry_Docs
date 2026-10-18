@@ -33,4 +33,6 @@ The native **Run 3** already completed 100-frame processing under Windows Mathem
 
 **All rights reserved — figure-specific permission.** Publication of this reduced-resolution montage on this website is expressly authorized. The experimental pixels and derived figure are **excluded from the MIT license**. Reproduction, adaptation, or redistribution requires permission from the relevant rights holder(s). Raw TIFFs and full processed archives remain private.
 
+**Data provenance and attribution:** Experimental data ©/owned by **Institute of Solid State Physics (ISSP), University of Latvia**; principal experimental contributors **Betija Ziediņa** and **Gunita Kojāne**. The data were shared with **Mihails Birjukovs, Institute of Numerical Modelling (INM)** for code development and verification. **ISSP approved publication of this specific reduced-resolution worked example**, including so that Betija could use the documentation with examples. This authorization does not extend to the full raw/processed archives or additional experimental figures. See [Credits & data provenance](../credits/index.md).
+
 For a fully open, executable image-analysis demonstration, follow the [synthetic-sequence tutorial](synthetic-sequence.md).
