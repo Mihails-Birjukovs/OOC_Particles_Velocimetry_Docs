@@ -77,6 +77,9 @@ def main() -> None:
     mathjs = (DOCS / "javascripts/mathjax.js").read_text(encoding="utf-8")
     if not all(x in config for x in ("pymdownx.arithmatex.generic = true", "javascripts/mathjax.js", "mathjax@3.2.2")) or 'tags: "all"' not in mathjs or "document$.subscribe" not in mathjs:
         raise SystemExit("Required numbered MathJax configuration missing")
+    config = (ROOT / "zensical.toml").read_text(encoding="utf-8")
+    if 'repo_url = "https://github.com/Mihails-Birjukovs/OOC_Particles_Velocimetry_Docs"' not in config:
+        raise SystemExit("GitHub icon must link to reviewed public docs repository")
     print(f"Public documentation allowlist verified: {len(actual)} curated files")
 
 
