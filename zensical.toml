@@ -6,6 +6,8 @@ site_author = "Mihails Birjukovs · Institute of Numerical Modelling, University
 copyright = "Copyright © 2026 Mihails Birjukovs"
 docs_dir = "docs"
 site_dir = "site"
+repo_url = "https://github.com/Mihails-Birjukovs/OOC_Particles_Velocimetry_Docs"
+repo_name = "OOC Particle Velocimetry · public docs"
 extra_css = ["stylesheets/inm.css"]
 extra_javascript = [
   "javascripts/mathjax.js",
