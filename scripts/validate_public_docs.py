@@ -27,6 +27,7 @@ EXPECTED = {
     "assets/inm-mark.svg",
     "assets/inm-square-footer.svg",
     "stylesheets/inm.css",
+    "javascripts/mathjax.js",
     "credits/index.md",
     "research/index.md",
     "assets/real-run1-historical-v5.svg",
@@ -72,6 +73,10 @@ def main() -> None:
     ):
         if fragment not in css:
             raise SystemExit("Missing Zensical copyright contrast fix: " + fragment)
+    config = (ROOT / "zensical.toml").read_text(encoding="utf-8")
+    mathjs = (DOCS / "javascripts/mathjax.js").read_text(encoding="utf-8")
+    if not all(x in config for x in ("pymdownx.arithmatex.generic = true", "javascripts/mathjax.js", "mathjax@3.2.2")) or 'tags: "all"' not in mathjs or "document$.subscribe" not in mathjs:
+        raise SystemExit("Required numbered MathJax configuration missing")
     print(f"Public documentation allowlist verified: {len(actual)} curated files")
 
 
