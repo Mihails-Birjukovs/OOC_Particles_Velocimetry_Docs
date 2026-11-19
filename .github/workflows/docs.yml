@@ -30,7 +30,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install Zensical
-        run: python -m pip install zensical
+        run: python -m pip install zensical==0.0.71
       - name: Audit public documentation allowlist
         run: python scripts/validate_public_docs.py
       - name: Build in strict mode
